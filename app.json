@@ -8,8 +8,6 @@
       "send"
     ],
     "repository": "https://github.com/enzyyfer/telegram-forwarder_auto",
-    "success_url": "/",
-    "website": "https://github.com/enzyyfer/TG-FileStreamBot",
     "env": {
         "APP_ID": {
             "description": "Your API_ID from https://my.telegram.org/apps"
@@ -27,13 +25,10 @@
             "description": "Enter the session id got from repl https://replit.com/@TeamUltroid/UltroidStringSession"
         }
     },
-    "buildpacks": [{
+    "buildpacks": [
         {
             "url": "heroku/python"
-        }]
-    "formation": {
-      "web": {
-          "quantity": 1,
-          "size": "eco"
-      }
+            "size": "eco"
+        }
+    ]
 }
